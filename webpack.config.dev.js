@@ -24,7 +24,6 @@ module.exports = {
     },
     //De esta forma activamos el modo dev
     mode:'development',
-    watch:true,
     resolve:{
         //Aqui ponemos las extensiones que tendremos en nuestro proyecto para webpack los lea 
         extensions:[".js"],
@@ -100,5 +99,18 @@ module.exports = {
           ]
       }),
       new Dotenv(),
-    ]
+    ],
+    devServer: {
+        static: 
+        {
+          directory: path.join(__dirname, "dist"),
+          watch: true,
+        },
+        watchFiles: path.join(__dirname, "./**"), //observa los cambios en todos nuestros archivos y actualiza el navegador
+        compress: true,
+        historyApiFallback: true,
+        port: 3006,
+        open: true, //Hace que se abra en el navegador
+        
+      },
 }

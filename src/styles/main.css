@@ -245,7 +245,7 @@ body {
 	position: relative;
 	padding: 20px 0;
 	width: 100%;
-	background: #968d8d;
+	background: #444343;
 	border-radius: 3px;
 	box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 	overflow: hidden;
@@ -267,7 +267,7 @@ body {
 
 .card_photo {
 	position: relative;
-	background: #968d8d;
+	background: #000000;
 	padding: 5px;
 	width: 190px;
 	height: 190px;
@@ -282,13 +282,13 @@ body {
 }
 
 .card_title {
-	color: #999;
+	color: rgb(0, 0, 0);
 	font-size: 18px;
 	margin: 0
 }
 
 .card_value {
-	color: #2c2e31;
+	color: #ffffff;
 	font-size: 38px;
 	margin: 5px;
 	text-transform: capitalize
@@ -347,7 +347,7 @@ body {
   }
   to {
     stroke: #1FFF00;
-    transform: rotate(180deg);
-    stroke-dasharray: 8;
+    transform: rotate(580deg);
+    stroke-dasharray: 100;
   }
 }
